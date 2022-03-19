@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #2666CF; */
+  font-family: 'fredoka', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  color: #2666CF;
+}
+/* table styling */
+table{
+ border-collapse: collapse;
+ margin: 40px 40px ;
+  width: 1523px;
+
+}
+#table {
+  text-align: left;
+  margin: auto;
+  max-width: max-content;
+  background-color: white;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* tbody tr:nth-child(odd) {
+  background-color: rgb(221, 221, 221);
+} */
+#table thead tr th {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 20px 10px 20px 10px;
+}
+#table tr td {
+  padding: 10px;
+  padding: 15px 5px 15px 5px;
+  border-top: 1px rgb(202, 202, 202) solid;
+}
+#table tr td:last-child , #table thead tr th:last-child{
+  padding: 10px;
+  padding-left: 200px;
+  /* border-top: 1px rgb(202, 202, 202) solid; */
+}
+td.delete{
+  padding-left: 75PX;
+  cursor: pointer;
+}
+#dataTable tr td{
+  padding-right: 80px;
+}
+.status{
+  background-color: gray;
+  padding: 5px;
+  border-radius: 10px;
+}
+.valide {
+  background-color: #5BE881;
+}
+.rejected {
+  background-color: #FF0000;
+}
+.on-validation {
+  background-color: #FDB64D;
+}
+
+
+/* show form section */
+#showFormSection{
+  width: 1603px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  border-radius: 5px;
+  margin-bottom:10px ;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn{
+  padding: 14px 55px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fcac35;
+  color: rgb(0, 0, 0);
+  font-family: 'fredoka', sans-serif;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.icon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20px;
+  height: 20px;
+  background: url(trash-icon.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#showFormSection .btn{
+  margin-right:30px;
+}
+.btn:hover{
+  background-color: #2666CF;
+  color: white;
+}
+
+/* form styling */
+#form {
+  background: white;
+  width: 1603px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  
+}
+#form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  background-color: rgba(186, 186, 201, 0.37);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+#form-container.show{
+  pointer-events: auto;
+  opacity: 1;
+}
+#form h2{
+  padding: 10px 40px;
+  font-size: 30px;
+}
+#userForm{
+  padding: 0px 40px 40px ;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3,[col]auto) ;
+}
+
+#userForm div label{
+  display: block;
+  font-size: 20px;
+}
+#userForm div:nth-child(6){
+  grid-column: col 1;
+}
+#userForm div input{
+  border-radius: 8px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.349);
+  margin-top:10px ;
+}
+#userForm div select{
+  border-radius: 8px;
+  width: 100%;
+  height: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.349);
+  margin-top:10px ;
+  font-size: 18px;
+}
+#userForm .btn{
+  grid-column: col 3;
+  justify-self: end;
+}
+

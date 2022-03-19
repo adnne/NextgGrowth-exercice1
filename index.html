@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+   <script src="https://your-site-or-cdn.com/fontawesome/v6.1.0/js/all.js" data-auto-replace-svg="nest"></script>
+  <title>Exercice</title>
+</head>
+<body>
+  
+  <h1>Exercice NextGrowth</h1>
+  <div class="myData">
+    
+  </div>
+  <div id="table"> 
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>date de creation</th>
+          <th>Etat</th>
+          <th>Nom</th>
+          <th>Prenom</th>
+          <th>Nom d'utilisateur</th>
+          <th>Matricule</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="dataTable">
+        
+      </tbody>
+    </table>
+  </div>
+  <div id="showFormSection">
+    <button class="btn" id="showForm">Ajouter utilisateur</button>
+  </div>
+  <div id="form-container">
+    <div id="form">
+      <h2>Ajout d'utilisateurs</h2>
+      <form id="userForm">
+        <div>
+          <label for="lastNameInput">Nom</label>
+          <input type="text" id="lastNameInput">
+        </div>
+        <div>
+          <label for="fisrtNameInput">Prénom</label>
+          <input type="text" id="firstNameInput">
+        </div>
+        <div>
+          <label for="statusInput">Etat</label>
+          <select name="etat" id="statusInput">
+            <option style="display: none;"></option>
+            <option value="Validé">Validé</option>
+            <option value="en validation">en validation </option>
+            <option value="Rejeté">Rejeté</option>
+          </select>
+        </div>
+        <div>
+          <label for="userNameInput">Nom d'utilisateur</label>
+          <input type="text" id="userNameInput">
+        </div>
+        <div>
+          <label for="createdDateInput">Date de création</label>
+          <input type="date" id="createdDateInput">
+        </div>
+        <div>
+          <label for="registrationNumberInput">Matricule</label>
+          <input type="text" id="registrationNumberInput">
+        </div>
+        <button class="btn" id="hideForm">Enregistrer</button>
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
